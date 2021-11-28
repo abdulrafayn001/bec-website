@@ -3,6 +3,8 @@ $primary-color: #333;
 
 .container {
   height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title {
@@ -99,11 +101,19 @@ $primary-color: #333;
       list-style: none;
       display: flex;
       flex-direction: row;
+      padding: 0.6rem 0;
+      border-radius: 20px;
+      cursor: pointer;
       a {
         color: #fff;
         text-decoration: none;
         
       }
+    }
+    li:hover{
+      background-color: #0d254b;
+      color: #fff;
+      transition: all ease-in 0.5s;
     }
   }
 }
@@ -114,4 +124,8 @@ $primary-color: #333;
 .listItem:active{
   background-color: #fff;
   color: #0d254b;
+}
+.mobileNavbar{
+  cursor: pointer;
+  border-radius: 50;
 }

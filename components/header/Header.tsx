@@ -124,6 +124,7 @@ export default function Header(props: any) {
               alt="Picture of the author"
               width={140}
               height={140}
+              
             />
           </div>
           <div className={styles.mobileNavmenu}>
