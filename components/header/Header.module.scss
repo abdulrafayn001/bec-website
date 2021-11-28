@@ -3,6 +3,9 @@ $primary-color: #333;
 
 .container {
   height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -26,17 +29,18 @@ $primary-color: #333;
 }
 
 .nav {
-  background: transparent;
   border-bottom: 3px solid white;
   width: 100vw;
   position: fixed;
   top: 0;
-
+  transition: all .8s;
   display: flex;
   align-items: center;
+  backdrop-filter: blur(3px);
   justify-content: space-around;
   padding: 20px;
   color: #fff;
+  transition: all ease-out 0.5s;
 
   @media only screen and (max-width: 700px) {
     display: none;
@@ -52,9 +56,11 @@ $primary-color: #333;
         font-size: 20px;
         font-weight: 700;
         color: white;
+        text-shadow: 2px 2px #0d254b;
         text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
+        transition: all ease-out .2s;
       }
 
       a:active {
@@ -62,34 +68,65 @@ $primary-color: #333;
       }
       a:hover {
         color: #0d254b;
+        text-shadow: none;
       }
     }
   }
 }
-
 .mobileNav {
+  transition: all ease 0.5s;
   display: none;
   background: transparent;
   width: 100vw;
-  height: auto;
   position: fixed;
   top: 0;
   background-color: #198fc1;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 20px 40px;
   color: #fff;
 
   @media only screen and (max-width: 700px) {
     display: inline-block;
   }
-
+  .logoContainer{
+    text-align: center;
+  }
+  .mobileNavmenu{
+    margin-top: -30px;
+  }
+  
   ul {
     li {
+      margin: 1rem 0;
       list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0.6rem 0;
+      border-radius: 20px;
+      cursor: pointer;
       a {
+        color: #fff;
         text-decoration: none;
+        
       }
     }
+    li:hover{
+      background-color: #0d254b;
+      color: #fff;
+      transition: all ease-in 0.5s;
+    }
   }
+}
+.controller{
+  text-align: center;
+  width: 3rem;
+}
+.listItem:active{
+  background-color: #fff;
+  color: #0d254b;
+}
+.mobileNavbar{
+  cursor: pointer;
+  border-radius: 50;
 }
