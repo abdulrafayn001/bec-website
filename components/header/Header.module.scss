@@ -26,7 +26,6 @@ $primary-color: #333;
 }
 
 .nav {
-  background: transparent;
   border-bottom: 3px solid white;
   width: 100vw;
   position: fixed;
@@ -34,9 +33,11 @@ $primary-color: #333;
   transition: all .8s;
   display: flex;
   align-items: center;
+  backdrop-filter: blur(3px);
   justify-content: space-around;
   padding: 20px;
   color: #fff;
+  transition: all ease-out 0.5s;
 
   @media only screen and (max-width: 700px) {
     display: none;
@@ -52,10 +53,11 @@ $primary-color: #333;
         font-size: 20px;
         font-weight: 700;
         color: white;
+        text-shadow: 2px 2px #0d254b;
         text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
-        transition: all .2s;
+        transition: all ease-out .2s;
       }
 
       a:active {
@@ -63,12 +65,13 @@ $primary-color: #333;
       }
       a:hover {
         color: #0d254b;
+        text-shadow: none;
       }
     }
   }
 }
-
 .mobileNav {
+  transition: all ease 0.5s;
   display: none;
   background: transparent;
   width: 100vw;
@@ -79,7 +82,6 @@ $primary-color: #333;
   justify-content: space-around;
   padding: 20px 40px;
   color: #fff;
-  transition: all .8s;
 
   @media only screen and (max-width: 700px) {
     display: inline-block;

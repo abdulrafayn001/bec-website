@@ -67,7 +67,7 @@ export default function Header(props: any) {
               setTitle("#");
             }}
           >
-            <Link href="/home"> HOME</Link>
+            <Link href="/"> HOME</Link>
           </li>
           <li
             onClick={() => {
@@ -117,7 +117,7 @@ export default function Header(props: any) {
         <div className={styles.dropdown}>
           <div
             className={styles.dropdownContent}
-            style={showDropDown === true ? dropdownStyle : { display: "none" }}>
+            style={showDropDown === true ? dropdownStyle : { display: "none" ,transition:"all ease 0.5s"}}>
           <div className={styles.logoContainer}>            
             <Image
               src={logoSVG}
@@ -135,7 +135,7 @@ export default function Header(props: any) {
                 }}
               >
                 <div className={styles.controller}><FontAwesomeIcon icon={faHome}></FontAwesomeIcon></div>
-                <Link href="/home">HOME</Link>
+                <Link href="/">HOME</Link>
               </li>
               <li
                 onClick={() => {
