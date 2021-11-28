@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import { useEffect, useState } from "react";
 import { navbarImage } from "../../utils/constant.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars,faHome,faHandshake,faCalendarAlt,faUserFriends,faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import logoSVG from "../../utils/svgs/logo.svg";
 import Image from "next/image";
 
@@ -67,7 +67,7 @@ export default function Header(props: any) {
               setTitle("#");
             }}
           >
-            <Link href="/">HOME</Link>
+            <Link href="/home"> HOME</Link>
           </li>
           <li
             onClick={() => {
@@ -105,7 +105,7 @@ export default function Header(props: any) {
       </nav>
 
       <nav className={styles.mobileNav}>
-        <div>
+        <div className={styles.mobileNavbar}>
           <FontAwesomeIcon
             onClick={() => {
               setShowDropDown(!showDropDown);
@@ -117,15 +117,33 @@ export default function Header(props: any) {
         <div className={styles.dropdown}>
           <div
             className={styles.dropdownContent}
-            style={showDropDown === true ? dropdownStyle : { display: "none" }}
-          >
-            <ul>
+            style={showDropDown === true ? dropdownStyle : { display: "none" }}>
+          <div className={styles.logoContainer}>            
+            <Image
+              src={logoSVG}
+              alt="Picture of the author"
+              width={140}
+              height={140}
+            />
+          </div>
+          <div className={styles.mobileNavmenu}>
+          <ul>
+            <li
+                onClick={() => {
+                  setImageNumber(0);
+                  setTitle("");
+                }}
+              >
+                <div className={styles.controller}><FontAwesomeIcon icon={faHome}></FontAwesomeIcon></div>
+                <Link href="/home">HOME</Link>
+              </li>
               <li
                 onClick={() => {
                   setImageNumber(1);
                   setTitle("");
                 }}
               >
+                <div className={styles.controller}><FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon></div>
                 <Link href="/join">JOIN</Link>
               </li>
               <li
@@ -134,6 +152,7 @@ export default function Header(props: any) {
                   setTitle("Events");
                 }}
               >
+                <div className={styles.controller}><FontAwesomeIcon icon={faCalendarAlt}></FontAwesomeIcon></div>
                 <Link href="/events">EVENTS</Link>
               </li>
               <li
@@ -142,6 +161,7 @@ export default function Header(props: any) {
                   setTitle("");
                 }}
               >
+                <div className={styles.controller}><FontAwesomeIcon icon={faUserFriends}></FontAwesomeIcon></div>
                 <Link href="/team">OUR TEAM</Link>
               </li>
               <li
@@ -150,9 +170,12 @@ export default function Header(props: any) {
                   setTitle("About Us");
                 }}
               >
+                <div className={styles.controller}><FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon></div>
                 <Link href="/about">ABOUT US</Link>
               </li>
             </ul>
+
+          </div>
           </div>
         </div>
       </nav>

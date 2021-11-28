@@ -31,7 +31,7 @@ $primary-color: #333;
   width: 100vw;
   position: fixed;
   top: 0;
-
+  transition: all .8s;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -55,6 +55,7 @@ $primary-color: #333;
         text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
+        transition: all .2s;
       }
 
       a:active {
@@ -71,25 +72,44 @@ $primary-color: #333;
   display: none;
   background: transparent;
   width: 100vw;
-  height: auto;
   position: fixed;
   top: 0;
   background-color: #198fc1;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 20px 40px;
   color: #fff;
+  transition: all .8s;
 
   @media only screen and (max-width: 700px) {
     display: inline-block;
   }
-
+  .logoContainer{
+    text-align: center;
+  }
+  .mobileNavmenu{
+    margin-top: -30px;
+  }
+  
   ul {
     li {
+      margin: 1rem 0;
       list-style: none;
+      display: flex;
+      flex-direction: row;
       a {
+        color: #fff;
         text-decoration: none;
+        
       }
     }
   }
+}
+.controller{
+  text-align: center;
+  width: 3rem;
+}
+.listItem:active{
+  background-color: #fff;
+  color: #0d254b;
 }
