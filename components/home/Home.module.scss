@@ -1,0 +1,23 @@
+.about {
+  height: 34rem;
+  background: #1c1d54;
+  display: flex;
+  justify-content: space-around;
+  .aboutConatiner,
+  .image {
+    margin: auto;
+    width: 35.5rem;
+    h1 {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #ffffff;
+    }
+  }
+}
