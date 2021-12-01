@@ -3,21 +3,23 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { logos } from "../../utils/collabs/collabs";
 import styles from "./Home.module.scss";
+
+import Image from "next/image";
 const responsive = {
   desktop: {
-    breakpoint: { max: 200, min: 1024 },
+    breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
+    slidesToSlide: 1,
   },
 };
 export default function Collaborations() {
@@ -26,11 +28,11 @@ export default function Collaborations() {
       <h1>Collaborations</h1>
       <div>
         <div className={styles.slider}>
-          <Carousel responsive={responsive}>
+          <Carousel responsive={responsive} infinite={true} ssr>
             {logos.map((img) => {
               return (
-                <div className={styles.image}>
-                  <img src={img} alt="" width={"200px"} />
+                <div className={styles.image} key={img}>
+                  <Image src={img} alt="" width={"300px"} height={"300px"} />
                 </div>
               );
             })}
