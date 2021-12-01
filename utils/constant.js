@@ -12,3 +12,6 @@ export const twitter = "https://twitter.com/becucp";
 
 export const abdulrafay = "https://www.linkedin.com/in/abdulrafayn001/";
 export const moiz = "https://www.linkedin.com/in/moiz-asad-063b53202/";
+
+export const signup_api =
+  "https://sheet.best/api/sheets/7569c6d7-0db4-4593-9490-234f4c1fc832";
