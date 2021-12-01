@@ -31,7 +31,7 @@ export default function Collaborations() {
           <Carousel responsive={responsive} infinite={true} ssr>
             {logos.map((img) => {
               return (
-                <div className={styles.image} key={img}>
+                <div className={styles.image} key={img.blurDataURL}>
                   <Image src={img} alt="" width={"300px"} height={"300px"} />
                 </div>
               );
