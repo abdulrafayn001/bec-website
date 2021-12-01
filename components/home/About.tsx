@@ -16,7 +16,7 @@ export default function About() {
           students can learn different aspects of business world.
         </p>
       </div>
-      <div className={styles.image}>
+      <div className={styles.selfLogo}>
         <Image src={logoSVG} alt="Logo of BEC" width={400} height={400} />
       </div>
     </div>

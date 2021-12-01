@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   .aboutConatiner,
-  .image {
+  .images {
     margin: auto;
     width: 35.5rem;
     h1 {
@@ -43,7 +43,10 @@
   margin-left: 40px;
   justify-items: center;
 }
-
+.selfLogo {
+  margin: auto;
+  width: 35.5rem;
+}
 @media only screen and (max-width: 700px) {
   .about {
     display: inline-block;
@@ -53,7 +56,8 @@
       margin-top: 50px;
     }
   }
-  .image {
-    display: none;
+  .selfLogo {
+    margin: auto;
+    width: auto;
   }
 }
