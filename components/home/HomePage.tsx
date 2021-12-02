@@ -1,5 +1,6 @@
 import About from "./About";
 import Collaborations from "./Collaborations";
+import ImageGrid from "./ImageGrid";
 import SignUp from "./SignUp";
 export default function HomePage() {
   const SLIDE_COUNT = 10;
@@ -8,6 +9,7 @@ export default function HomePage() {
     <>
       <About />
       <Collaborations />
+      <ImageGrid />
       <SignUp />
     </>
   );
