@@ -18,11 +18,53 @@
   }
 }
 
+.aim {
+  height: 20rem;
+  margin: auto;
+  padding: 5rem;
+  background-color: #f0f0f0;
+  h1 {
+    color: #1f1f1f;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+  p {
+    color: #858585;
+    display: inline;
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .vision {
     height: auto;
     margin: auto;
     padding: auto;
+    h1 {
+      color: #1f1f1f;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    p {
+      color: #858585;
+      display: inline;
+      font-size: 15px;
+      line-height: 27px;
+    }
+  }
+
+  .aim {
+    height: auto;
+    margin: auto;
+    padding: auto;
+    background-color: #f0f0f0;
     h1 {
       color: #1f1f1f;
       font-family: Montserrat;
