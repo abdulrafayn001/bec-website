@@ -1,0 +1,119 @@
+.vision {
+  height: 20rem;
+  margin: auto;
+  padding: 5rem;
+  h1 {
+    color: #1f1f1f;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+  p {
+    color: #858585;
+    display: inline;
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+.aim {
+  height: 20rem;
+  margin: auto;
+  padding: 5rem;
+  background-color: #f0f0f0;
+  h1 {
+    color: #1f1f1f;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+  p {
+    color: #858585;
+    display: inline;
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+.others {
+  background-color: #1c1d54;
+  margin: auto;
+  height: auto;
+  padding: 5rem;
+  h1 {
+    color: #f0f0f0;
+    font-family: Montserrat;
+    font-size: 30px;
+    text-align: center;
+  }
+  p {
+    color: #858585;
+    display: inline;
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+.offerList {
+  display: flex;
+  justify-content: space-around;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .vision {
+    height: auto;
+    margin: auto;
+    padding: auto;
+    h1 {
+      color: #1f1f1f;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    p {
+      color: #858585;
+      display: inline;
+      font-size: 15px;
+      line-height: 27px;
+    }
+  }
+
+  .aim {
+    height: auto;
+    margin: auto;
+    padding: auto;
+    background-color: #f0f0f0;
+    h1 {
+      color: #1f1f1f;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    p {
+      color: #858585;
+      display: inline;
+      font-size: 15px;
+      line-height: 27px;
+    }
+  }
+  .offerList {
+    display: block;
+    text-align: center;
+    div {
+      padding: 0.5rem;
+    }
+  }
+}
