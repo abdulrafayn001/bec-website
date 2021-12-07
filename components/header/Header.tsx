@@ -3,7 +3,14 @@ import styles from "./Header.module.scss";
 import { useEffect, useState } from "react";
 import { navbarImage } from "../../utils/constant.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars,faHome,faHandshake,faCalendarAlt,faUserFriends,faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faHome,
+  faHandshake,
+  faCalendarAlt,
+  faUserFriends,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons";
 import logoSVG from "../../utils/svgs/logo.svg";
 import Image from "next/image";
 
@@ -47,7 +54,7 @@ export default function Header(props: any) {
       id="nav"
       style={{
         backgroundImage: `url(${
-          imageNumber !== 3 ? navbarImage[imageNumber] : teamImage
+          imageNumber !== 3 ? navbarImage[imageNumber].src : teamImage
         })`,
       }}
     >
@@ -117,66 +124,79 @@ export default function Header(props: any) {
         <div className={styles.dropdown}>
           <div
             className={styles.dropdownContent}
-            style={showDropDown === true ? dropdownStyle : { display: "none" ,transition:"all ease 0.5s"}}>
-          <div className={styles.logoContainer}>            
-            <Image
-              src={logoSVG}
-              alt="Picture of the author"
-              width={140}
-              height={140}
-              
-            />
-          </div>
-          <div className={styles.mobileNavmenu}>
-          <ul>
-            <li
-                onClick={() => {
-                  setImageNumber(0);
-                  setTitle("");
-                }}
-              >
-                <div className={styles.controller}><FontAwesomeIcon icon={faHome}></FontAwesomeIcon></div>
-                <Link href="/">HOME</Link>
-              </li>
-              <li
-                onClick={() => {
-                  setImageNumber(1);
-                  setTitle("");
-                }}
-              >
-                <div className={styles.controller}><FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon></div>
-                <Link href="/join">JOIN</Link>
-              </li>
-              <li
-                onClick={() => {
-                  setImageNumber(2);
-                  setTitle("Events");
-                }}
-              >
-                <div className={styles.controller}><FontAwesomeIcon icon={faCalendarAlt}></FontAwesomeIcon></div>
-                <Link href="/events">EVENTS</Link>
-              </li>
-              <li
-                onClick={() => {
-                  setImageNumber(3);
-                  setTitle("");
-                }}
-              >
-                <div className={styles.controller}><FontAwesomeIcon icon={faUserFriends}></FontAwesomeIcon></div>
-                <Link href="/team">OUR TEAM</Link>
-              </li>
-              <li
-                onClick={() => {
-                  setImageNumber(4);
-                  setTitle("About Us");
-                }}
-              >
-                <div className={styles.controller}><FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon></div>
-                <Link href="/about">ABOUT US</Link>
-              </li>
-            </ul>
-
-          </div>
+            style={
+              showDropDown === true
+                ? dropdownStyle
+                : { display: "none", transition: "all ease 0.5s" }
+            }
+          >
+            <div className={styles.logoContainer}>
+              <Image
+                src={logoSVG}
+                alt="Picture of the author"
+                width={140}
+                height={140}
+              />
+            </div>
+            <div className={styles.mobileNavmenu}>
+              <ul>
+                <li
+                  onClick={() => {
+                    setImageNumber(0);
+                    setTitle("");
+                  }}
+                >
+                  <div className={styles.controller}>
+                    <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                  </div>
+                  <Link href="/">HOME</Link>
+                </li>
+                <li
+                  onClick={() => {
+                    setImageNumber(1);
+                    setTitle("");
+                  }}
+                >
+                  <div className={styles.controller}>
+                    <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon>
+                  </div>
+                  <Link href="/join">JOIN</Link>
+                </li>
+                <li
+                  onClick={() => {
+                    setImageNumber(2);
+                    setTitle("Events");
+                  }}
+                >
+                  <div className={styles.controller}>
+                    <FontAwesomeIcon icon={faCalendarAlt}></FontAwesomeIcon>
+                  </div>
+                  <Link href="/events">EVENTS</Link>
+                </li>
+                <li
+                  onClick={() => {
+                    setImageNumber(3);
+                    setTitle("");
+                  }}
+                >
+                  <div className={styles.controller}>
+                    <FontAwesomeIcon icon={faUserFriends}></FontAwesomeIcon>
+                  </div>
+                  <Link href="/team">OUR TEAM</Link>
+                </li>
+                <li
+                  onClick={() => {
+                    setImageNumber(4);
+                    setTitle("About Us");
+                  }}
+                >
+                  <div className={styles.controller}>
+                    <FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon>
+                  </div>
+                  <Link href="/about">ABOUT US</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
