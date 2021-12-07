@@ -4,7 +4,6 @@ import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CS
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import Footer from "../components/footer/Footer";
-
 import Header from "../components/header/Header";
 function MyApp({ Component, pageProps }: AppProps) {
   return (

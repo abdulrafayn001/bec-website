@@ -1,0 +1,125 @@
+.divisions {
+  height: auto;
+  padding: 4rem 0;
+  background-color: #f0f0f0;
+  .heading {
+    text-align: center;
+    padding: 1rem;
+    color: #1f1f1f;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .divisionsDet {
+    width: 50rem;
+  }
+
+  .divisionsImg {
+    width: 23rem;
+  }
+
+  .name {
+    color: #333333;
+    display: inline;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    line-height: 28.8px;
+  }
+  p {
+    color: #858585;
+    font-family: Lato;
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .divisionsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+  }
+}
+.break {
+  width: 50%;
+}
+@media only screen and (max-width: 700px) {
+  .divisions {
+    .heading {
+      font-size: 20px;
+    }
+    .divisionsContainer {
+      display: block;
+      text-align: center;
+    }
+    .divisionsDet {
+      width: 17rem;
+      margin: auto;
+      padding: auto;
+      text-align: left;
+
+      padding-top: 3rem;
+    }
+
+    .divisionsImg {
+      padding-top: 3rem;
+      width: auto;
+      color: #1c1d54;
+    }
+  }
+}
+.divisionsContainer:hover {
+  .divisionsImg {
+    color: #1c1d54;
+  }
+}
+
+.gridImage {
+  width: 270px;
+  border-radius: 4rem;
+}
+
+.hierarchy {
+  .grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .hierarchyContainer {
+    border: 0.1rem solid #cfc8c8;
+    margin: 1.5rem 0;
+    h4 {
+      color: #333333;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.36px;
+      line-height: 21.6px;
+      text-align: center;
+    }
+    h6 {
+      color: #333333;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      line-height: 18px;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+  .head {
+    color: #1f1f1f;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .hierarchyContainer:hover {
+    background-color: #1c1d54;
+    h4,
+    h6 {
+      color: #f0f0f0;
+    }
+  }
+}
