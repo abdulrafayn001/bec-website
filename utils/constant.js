@@ -8,7 +8,6 @@ import {
   faClock,
   faChalkboardTeacher,
   faNetworkWired,
-  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Zoobia from "./images/testimonals/1.jpeg";
