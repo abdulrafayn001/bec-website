@@ -1,3 +1,9 @@
+import {
+  faChalkboardTeacher,
+  faNetworkWired,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+
 export const navbarImage = [
   "https://scontent.flhe5-1.fna.fbcdn.net/v/t1.6435-9/128663991_148317413742305_6457771579767776441_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeExgyO4QWMF8NNrDUdews1YI5p0iPYhgrgjmnSI9iGCuFGYKeP4ST-ctgORiTmaJIyAdrpsemUgmBTJAv35dDQg&_nc_ohc=ZRBJY6pv7VIAX-tZqOf&_nc_ht=scontent.flhe5-1.fna&oh=0b96460e9eab4642b65c302c92050c23&oe=61ADF19B",
   "https://scontent.flhe5-1.fna.fbcdn.net/v/t1.6435-9/128749079_148339250406788_3304138482359142270_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFdFaBXB4pjB4pqXUdhS1tjPxnSmTxJnu8_GdKZPEme73C5mWhiujhn8m0CDD-LHN-Xp3DIIaWfz7-naGT4pY69&_nc_ohc=36l62Ent8p0AX_Zs8Rq&_nc_ht=scontent.flhe5-1.fna&oh=7da49abae07bc3f3065793f082df5940&oe=61AC1323",
@@ -15,3 +21,21 @@ export const moiz = "https://www.linkedin.com/in/moiz-asad-063b53202/";
 
 export const signup_api =
   "https://sheet.best/api/sheets/7569c6d7-0db4-4593-9490-234f4c1fc832";
+
+export const events = [
+  {
+    title: "Workshops",
+    icons: faChalkboardTeacher,
+    det: "Learn useful thinking and practical skills employed by consultants.",
+  },
+  {
+    title: "Networking Nights",
+    icons: faNetworkWired,
+    det: "Network with top consultants and learn more about their journey.",
+  },
+  {
+    title: "Social Events",
+    icons: faUsers,
+    det: "Interact with fellow participants and the LCG team at multiple social activities planned throughout the competition.",
+  },
+];
