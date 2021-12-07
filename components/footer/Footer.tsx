@@ -41,10 +41,9 @@ export default function Footer() {
           <h4>Contact</h4>
           <div>
             <p>
-              Address: University of Central Punjab, 1 - Khayaban-e-Jinnah Road,
-              Johar Town, Lahore.
+              Address: Student Affairs Centre at University of Central Punjab
             </p>
-            <p className={style.email}>Email: bec.edu.pk@gmail.com</p>
+            <p className={style.email}>Email: bec@ucp.edu.pk</p>
           </div>
         </div>
       </div>
@@ -56,7 +55,7 @@ export default function Footer() {
             <a href={abdulrafay} target="_blank" rel="noopener noreferrer">
               AR
             </a>{" "}
-            &{" "}
+            {"& "}
             <a href={moiz} target="_blank" rel="noopener noreferrer">
               MZ
             </a>{" "}
