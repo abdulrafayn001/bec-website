@@ -3,6 +3,9 @@ import {
   faBullseye,
   faUserTie,
   faClock,
+  faChalkboardTeacher,
+  faNetworkWired,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Zoobia from "./images/testimonals/1.jpeg";
@@ -68,5 +71,23 @@ export const testimonials = [
     photo: Zoobia,
     name: "Jawwad Raza",
     text: "BEC worked like a support system to my communication skills, this platform challenged me to defeat my fear of public speaking. I have had great memories working with my colleagues and members of the society. It was definitely a plus to my university life. Moreover, i would say to every person who joins any society never do this work as a burden or you will not gain, do it like a opportunity and you will feel the difference.",
+  },
+];
+
+export const events = [
+  {
+    title: "Workshops",
+    icons: faChalkboardTeacher,
+    det: "Learn useful thinking and practical skills employed by consultants.",
+  },
+  {
+    title: "Networking Nights",
+    icons: faNetworkWired,
+    det: "Network with top consultants and learn more about their journey.",
+  },
+  {
+    title: "Social Events",
+    icons: faUsers,
+    det: "Interact with fellow participants and the LCG team at multiple social activities planned throughout the competition.",
   },
 ];
