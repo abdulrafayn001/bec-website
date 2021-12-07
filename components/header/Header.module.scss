@@ -33,7 +33,7 @@ $primary-color: #333;
   width: 100vw;
   position: fixed;
   top: 0;
-  transition: all .8s;
+  transition: all 0.8s;
   display: flex;
   align-items: center;
   backdrop-filter: blur(3px);
@@ -60,7 +60,7 @@ $primary-color: #333;
         text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
-        transition: all ease-out .2s;
+        transition: all ease-out 0.2s;
       }
 
       a:active {
@@ -89,13 +89,13 @@ $primary-color: #333;
   @media only screen and (max-width: 700px) {
     display: inline-block;
   }
-  .logoContainer{
+  .logoContainer {
     text-align: center;
   }
-  .mobileNavmenu{
+  .mobileNavmenu {
     margin-top: -30px;
   }
-  
+
   ul {
     li {
       margin: 1rem 0;
@@ -108,25 +108,24 @@ $primary-color: #333;
       a {
         color: #fff;
         text-decoration: none;
-        
       }
     }
-    li:hover{
+    li:hover {
       background-color: #0d254b;
       color: #fff;
       transition: all ease-in 0.5s;
     }
   }
 }
-.controller{
+.controller {
   text-align: center;
   width: 3rem;
 }
-.listItem:active{
+.listItem:active {
   background-color: #fff;
   color: #0d254b;
 }
-.mobileNavbar{
+.mobileNavbar {
   cursor: pointer;
   border-radius: 50;
 }

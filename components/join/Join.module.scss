@@ -1,0 +1,155 @@
+.join {
+  height: auto;
+  margin: auto;
+  padding: 5rem;
+  h1 {
+    color: #1f1f1f;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+  p {
+    color: #858585;
+    display: inline;
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+.circle {
+  background-color: #1c1d54;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  border-radius: 50%;
+  width: 50px;
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+  .listContainer {
+    width: 17rem;
+  }
+  .bodyText {
+    margin-top: 1rem;
+  }
+}
+.valuesContainer {
+  width: 18rem;
+  height: auto;
+  background-color: #ffffff;
+  .title {
+    color: #303288;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  .body {
+    color: #1c1d54;
+    font-size: 15px;
+    line-height: 27px;
+    padding: 2rem;
+  }
+}
+.icon {
+  color: #303288;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  height: 17rem;
+}
+
+.valuesContainer:hover {
+  background: #f0f0f0;
+  .icon {
+    color: #1f1f1f;
+  }
+  .title {
+    color: #1f1f1f;
+  }
+  .body {
+    p {
+      color: #858585;
+    }
+  }
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #303288;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #1c1d54;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: #1f1f1f;
+  border: 0.1rem solid #1c1d54;
+}
+
+.testContainer {
+  width: 37.5rem;
+  height: 18rem;
+  display: flex;
+  justify-content: space-around;
+  image {
+    width: 14rem;
+    color: #858585;
+    display: inline;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: left;
+  }
+  .text {
+    width: 19.75rem;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .list {
+    display: block;
+
+    justify-content: space-around;
+    .listContainer {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .valuesContainer {
+    margin-top: 0.5rem;
+    width: 15.75rem;
+  }
+
+  .testContainer {
+    display: block;
+    height: auto;
+    margin-bottom: 3.5rem;
+
+    .text {
+      margin-top: 1.5rem;
+      height: 15rem;
+      width: 15.75rem;
+      overflow: scroll;
+    }
+  }
+}
+.img {
+  display: block;
+}
