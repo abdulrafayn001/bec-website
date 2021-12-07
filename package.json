@@ -1,6 +1,9 @@
 {
   "name": "bec-website",
   "private": true,
+  "engines": {
+    "node": "16.11.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
