@@ -65,12 +65,12 @@ export default function Footer() {
 
       <div className={style.poweredby}>
         <div>
-          Powered by
+          Powered by{" "}
           <span className={style.link}>
             <a href={abdulrafay} target="_blank" rel="noopener noreferrer">
-              AR
+              AR{" "}
             </a>
-            Solution
+            Solutions
           </span>
         </div>
       </div>
