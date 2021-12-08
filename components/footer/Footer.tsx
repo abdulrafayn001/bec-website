@@ -35,19 +35,19 @@ export default function Footer() {
             <a
               href={facebook}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               className="fa fa-facebook"
             ></a>
             <a
               href={instagram}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               className="fa fa-instagram"
             ></a>
             <a
               href={twitter}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               className="fa fa-twitter"
             ></a>
           </div>
@@ -67,7 +67,7 @@ export default function Footer() {
         <div>
           Powered by
           <span className={style.link}>
-            <a href={abdulrafay} target="_blank" rel="noopener noreferrer">
+            <a href={abdulrafay} target="_blank" rel="noreferrer">
               AR
             </a>
             Solution

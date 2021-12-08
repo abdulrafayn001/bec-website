@@ -14,7 +14,7 @@ import one from "./images/8.jpg";
 import two from "./images/28.jpg";
 import three from "./images/3.jpg";
 import five from "./images/1.jpg";
-import four from "./images/2.jpg";
+import four from "./images/2.jpeg";
 import Zoobia from "./images/testimonals/1.jpeg";
 
 export const navbarImage = [one, two, three, four, five];

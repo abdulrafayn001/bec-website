@@ -2,7 +2,6 @@ import styles from "./Events.module.scss";
 import { events } from "../../utils/constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Structure() {
-  let counter = 0;
   return (
     <div>
       <div className={styles.structure}>
@@ -11,8 +10,8 @@ export default function Structure() {
           <div>
             {events.map((itm, index) => {
               return index % 2 == 0 ? (
-                <>
-                  <div key={index} className={styles.section}>
+                <div key={index}>
+                  <div className={styles.section}>
                     <div className={styles.icon}>
                       <FontAwesomeIcon icon={itm.icons} size="10x" />
                     </div>
@@ -24,10 +23,10 @@ export default function Structure() {
                   <div className={styles.line}>
                     <hr />
                   </div>
-                </>
+                </div>
               ) : (
-                <>
-                  <div key={index} className={styles.section}>
+                <div key={index}>
+                  <div className={styles.section}>
                     <div className={styles.body}>
                       <div className={styles.title}>{itm.title}</div>
                       <div>{itm.det}</div>
@@ -39,7 +38,7 @@ export default function Structure() {
                   <div className={styles.line}>
                     <hr />
                   </div>
-                </>
+                </div>
               );
             })}
           </div>

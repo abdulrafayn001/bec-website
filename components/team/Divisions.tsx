@@ -10,8 +10,8 @@ export default function Divisions() {
       <div>
         {divisions.map((itm, index) => {
           return index % 2 === 0 ? (
-            <>
-              <div key={index} className={styles.divisionsContainer}>
+            <div key={index}>
+              <div className={styles.divisionsContainer}>
                 <div>
                   <FontAwesomeIcon
                     className={styles.divisionsImg}
@@ -37,10 +37,10 @@ export default function Divisions() {
                   <hr className={styles.break} />
                 </div>
               )}
-            </>
+            </div>
           ) : (
-            <>
-              <div key={index} className={styles.divisionsContainer}>
+            <div key={index}>
+              <div className={styles.divisionsContainer}>
                 <div className={styles.divisionsDet}>
                   <div>
                     <h3 className={styles.name}>{itm.name}</h3>
@@ -66,7 +66,7 @@ export default function Divisions() {
                   <hr className={styles.break} />
                 </div>
               )}
-            </>
+            </div>
           );
         })}
       </div>

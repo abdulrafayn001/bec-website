@@ -12,14 +12,15 @@ export default function Hierarchy() {
         {hierarchy.map((itm) => {
           return (
             <div
+              key={itm.image.src}
               style={{ display: "inline-block" }}
               className={styles.hierarchyContainer}
             >
-              <div key={itm.image.src} className={styles.gridImage}>
+              <div className={styles.gridImage}>
                 <ModalImage
                   small={itm.image.src}
                   large={itm.image.src}
-                  alt=""
+                  alt={itm.designation}
                 />
               </div>
               <div>
