@@ -32,9 +32,24 @@ export default function Footer() {
         <div className={style.social}>
           <h4>Social</h4>
           <div>
-            <a href={facebook} target="_blank" className="fa fa-facebook"></a>
-            <a href={instagram} target="_blank" className="fa fa-instagram"></a>
-            <a href={twitter} target="_blank" className="fa fa-twitter"></a>
+            <a
+              href={facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fa fa-facebook"
+            ></a>
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fa fa-instagram"
+            ></a>
+            <a
+              href={twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fa fa-twitter"
+            ></a>
           </div>
         </div>
         <div className={style.contact}>
