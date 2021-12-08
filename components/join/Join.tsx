@@ -20,7 +20,12 @@ export default function Join() {
       <Section
         header={"Application Form"}
         body={
-          <a href={registration} target="_blank" className={styles.btn}>
+          <a
+            href={registration}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btn}
+          >
             Click to open
           </a>
         }

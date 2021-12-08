@@ -2,7 +2,7 @@ import styles from "./About.module.scss";
 export default function Offers() {
   return (
     <div className={styles.vision}>
-      <h1>BEC's Core Services</h1>
+      <h1>BEC Core Services</h1>
       <br />
       <div className={styles.offerList}>
         <div>Advisors</div>

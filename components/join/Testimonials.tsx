@@ -14,6 +14,7 @@ export default function Testimonials(props: any) {
                   width={220}
                   height={248}
                   className={styles.img}
+                  alt=""
                 ></Image>
                 <strong style={{ display: "block" }}>{itm.name}</strong>
               </div>
